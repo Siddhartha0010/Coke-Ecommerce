@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola Store</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images\icon.png" alt="Coca-Cola Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="cart-container">
+            <a href="cart.html" class="order-btn">ORDER NOW</a>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>START FROM <span>ZERO</span></h1>
+                    <p>Zero Sugar Coke is a sugar-free version of Coca-Cola, offering the classic taste without the calories.</p>
+                    <button class="add-to-cart-btn" data-id="1" data-name="Coca-Cola Zero" data-price="1.99" data-size="250ml" data-image="images/coke-zero.png">Add to cart</button>
+                </div>
+                <div class="hero-image">
+                    <img src="images\indeximg.png" alt="Coca-Cola Zero" width="1000">
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>OUR PRODUCTS</h2>
+            <div class="products-container">
+                <div class="product-card">
+                    <img src="images\coke.png" alt="Coca-Cola">
+                    <h3>Coca-Cola</h3>
+                    <div class="product-sizes">
+                        <button class="size-btn active" data-size="250ml" data-price="160">250ml</button>
+                        <button class="size-btn" data-size="600ml" data-price="300">600ml</button>
+                        <button class="size-btn" data-size="1L" data-price="500">1L</button>
+                    </div>
+                    <p class="product-price">Rs 160</p>
+                    <button class="add-to-cart-btn" data-id="2" data-name="Coca-Cola" data-price="160" data-size="250ml" data-image="images/coke.png">Add to cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images\sprite.png" alt="Sprite">
+                    <h3>Sprite</h3>
+                    <div class="product-sizes">
+                        <button class="size-btn active" data-size="250ml" data-price="150">250ml</button>
+                        <button class="size-btn" data-size="600ml" data-price="280">600ml</button>
+                        <button class="size-btn" data-size="1L" data-price="500">1L</button>
+                    </div>
+                    <p class="product-price">Rs 150</p>
+                    <button class="add-to-cart-btn" data-id="3" data-name="Sprite" data-price="150" data-size="250ml" data-image="images/sprite.png">Add to cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images\fanta.png" alt="Fanta">
+                    <h3>Fanta</h3>
+                    <div class="product-sizes">
+                        <button class="size-btn active" data-size="250ml" data-price="150">250ml</button>
+                        <button class="size-btn" data-size="600ml" data-price="280">600ml</button>
+                        <button class="size-btn" data-size="1L" data-price="500">1L</button>
+                    </div>
+                    <p class="product-price">Rs 150</p>
+                    <button class="add-to-cart-btn" data-id="4" data-name="Fanta" data-price="150" data-size="250ml" data-image="images/fanta.png">Add to cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images\thumsup.png" alt="Thums Up">
+                    <h3>Thums Up</h3>
+                    <div class="product-sizes">
+                        <button class="size-btn active" data-size="250ml" data-price="180">250ml</button>
+                        <button class="size-btn" data-size="600ml" data-price="320">600ml</button>
+                        <button class="size-btn" data-size="1L" data-price="580">1L</button>
+                    </div>
+                    <p class="product-price">Rs 180</p>
+                    <button class="add-to-cart-btn" data-id="5" data-name="Thums Up" data-price="180" data-size="250ml" data-image="images/thumsup.png">Add to cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images\maaza.png" alt="Maaza">
+                    <h3>Maaza</h3>
+                    <div class="product-sizes">
+                        <button class="size-btn active" data-size="250ml" data-price="170">250ml</button>
+                        <button class="size-btn" data-size="600ml" data-price="300">600ml</button>
+                        <button class="size-btn" data-size="1L" data-price="500">1L</button>
+                    </div>
+                    <p class="product-price">Rs 170</p>
+                    <button class="add-to-cart-btn" data-id="6" data-name="Maaza" data-price="170" data-size="250ml" data-image="images/maaza.png">Add to cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart-popup-content">
+            <div class="cart-popup-header">
+                <h3>Your Cart</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-price">Rs0.00</span></p>
+            </div>
+            <div class="cart-buttons">
+                <button id="clear-cart">Clear Cart</button>
+                <a href="checkout.html" class="checkout-btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images\icon.png" alt="Coca-Cola Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@cokestore.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Coca-Cola Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js\script.js"></script>
+</body>
+</html>

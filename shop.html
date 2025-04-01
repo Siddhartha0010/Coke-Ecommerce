@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Coca-Cola Store</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images\icon.png" alt="Coca-Cola Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html" class="active">SHOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="cart-container">
+            <a href="cart.html" class="order-btn">ORDER NOW</a>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-banner">
+            <h1>Our Products</h1>
+            <p>Explore our range of refreshing beverages</p>
+        </section>
+
+        <section class="shop-products">
+            <div class="filter-container">
+                <h3>Filter by:</h3>
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="coke">Coca-Cola</button>
+                    <button class="filter-btn" data-filter="sprite">Sprite</button>
+                    <button class="filter-btn" data-filter="fanta">Fanta</button>
+                    <button class="filter-btn" data-filter="thumsup">Thums Up</button>
+                    <button class="filter-btn" data-filter="maaza">Maaza</button>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Coca-Cola Products -->
+                <div class="product-card" data-category="coke">
+                    <img src="images\coke.png" alt="Coca-Cola">
+                    <h3>Coca-Cola</h3>
+                    <div class="product-sizes">
+                        <button class="size-btn active" data-size="250ml" data-price="160">250ml</button>
+                        <button class="size-btn" data-size="600ml" data-price="300">600ml</button>
+                        <button class="size-btn" data-size="1L" data-price="500">1L</button>
+                    </div>
+                    <p class="product-price">Rs 160</p>
+                    <button class="add-to-cart-btn" data-id="2" data-name="Coca-Cola" data-price="160" data-size="250ml" data-image="images/coke.png">Add to cart</button>
+                </div>
+
+                <div class="product-card" data-category="coke">
+                    <img src="images\cokezero.png" alt="Coca-Cola Zero">
+                    <h3>Coca-Cola Zero</h3>
+                    <div class="product-sizes">
+                        <button class="size-btn active" data-size="250ml" data-price="160">250ml</button>
+                        <button class="size-btn" data-size="600ml" data-price="320">600ml</button>
+                        <button class="size-btn" data-size="1L" data-price="510">1L</button>
+                    </div>
+                    <p class="product-price">   Rs 160</p>
+                    <button class="add-to-cart-btn" data-id="1" data-name="Coca-Cola Zero" data-price="160" data-size="250ml" data-image="images/coke-zero.png">Add to cart</button>
+                </div>
+
+                <!-- Sprite Products -->
+                <div class="product-card" data-category="sprite">
+                    <img src="images\sprite.png" alt="Sprite">
+                    <h3>Sprite</h3>
+                    <div class="product-sizes">
+                        <button class="size-btn active" data-size="250ml" data-price="150">250ml</button>
+                        <button class="size-btn" data-size="600ml" data-price="280">600ml</button>
+                        <button class="size-btn" data-size="1L" data-price="500">1L</button>
+                    </div>
+                    <p class="product-price">Rs 150</p>
+                    <button class="add-to-cart-btn" data-id="3" data-name="Sprite" data-price="150" data-size="250ml" data-image="images/sprite.png">Add to cart</button>
+                </div>
+
+                <!-- Fanta Products -->
+                <div class="product-card" data-category="fanta">
+                    <img src="images\fanta.png" alt="Fanta">
+                    <h3>Fanta</h3>
+                    <div class="product-sizes">
+                        <button class="size-btn active" data-size="250ml" data-price="150">250ml</button>
+                        <button class="size-btn" data-size="600ml" data-price="280">600ml</button>
+                        <button class="size-btn" data-size="1L" data-price="500">1L</button>
+                    </div>
+                    <p class="product-price">Rs 140</p>
+                    <button class="add-to-cart-btn" data-id="4" data-name="Fanta" data-price="140" data-size="250ml" data-image="images/fanta.png">Add to cart</button>
+                </div>
+
+                <!-- Thums Up Products -->
+                <div class="product-card" data-category="thumsup">
+                    <img src="images\thumsup.png" alt="Thums Up">
+                    <h3>Thums Up</h3>
+                    <div class="product-sizes">
+                        <button class="size-btn active" data-size="250ml" data-price="180">250ml</button>
+                        <button class="size-btn" data-size="600ml" data-price="320">600ml</button>
+                        <button class="size-btn" data-size="1L" data-price="580">1L</button>
+                    </div>
+                    <p class="product-price">Rs 180</p>
+                    <button class="add-to-cart-btn" data-id="5" data-name="Thums Up" data-price="180" data-size="250ml" data-image="images/thumsup.png">Add to cart</button>
+                </div>
+
+                <!-- Maaza Products -->
+                <div class="product-card" data-category="maaza">
+                    <img src="images\maaza.png" alt="Maaza">
+                    <h3>Maaza</h3>
+                    <div class="product-sizes">
+                        <button class="size-btn active" data-size="250ml" data-price="170">250ml</button>
+                        <button class="size-btn" data-size="600ml" data-price="300">600ml</button>
+                        <button class="size-btn" data-size="1L" data-price="500">1L</button>
+                    </div>
+                    <p class="product-price">Rs 170</p>
+                    <button class="add-to-cart-btn" data-id="6" data-name="Maaza" data-price="170" data-size="250ml" data-image="images/maaza.png">Add to cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart-popup-content">
+            <div class="cart-popup-header">
+                <h3>Your Cart</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-price">Rs 0.00</span></p>
+            </div>
+            <div class="cart-buttons">
+                <button id="clear-cart">Clear Cart</button>
+                <a href="checkout.html" class="checkout-btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images\icon.png" alt="Coca-Cola Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@cokestore.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Coca-Cola Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js\script.js"></script>
+</body>
+</html>

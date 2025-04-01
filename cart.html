@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Coca-Cola Store</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images\icon.png" alt="Coca-Cola Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="cart-container">
+            <a href="cart.html" class="order-btn active">ORDER NOW</a>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <h1>Your Shopping Cart</h1>
+            
+            <div class="cart-container-page">
+                <div class="cart-items-container" id="cart-items-page">
+                    <!-- Cart items will be added here dynamically -->
+                    <div class="empty-cart-message" id="empty-cart-message">
+                        <i class="fas fa-shopping-cart fa-4x"></i>
+                        <h3>Your cart is empty</h3>
+                        <p>Looks like you haven't added any products to your cart yet.</p>
+                        <a href="shop.html" class="continue-shopping-btn">Continue Shopping</a>
+                    </div>
+                </div>
+                
+                <div class="cart-summary" id="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal">Rs 0.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Shipping</span>
+                        <span id="cart-shipping">RS 0.00</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total</span>
+                        <span id="cart-total">Rs 0.00</span>
+                    </div>
+                    <div class="promo-code">
+                        <input type="text" placeholder="Enter promo code">
+                        <button>Apply</button>
+                    </div>
+                    <a href="checkout.html" class="checkout-btn-large" id="checkout-btn">Proceed to Checkout</a>
+                    <button id="clear-cart-page" class="clear-cart-btn">Clear Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images\icon.png" alt="Coca-Cola Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@cokestore.com</p>
+                <p>Phone: 9878322296</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Coca-Cola Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js\script.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Coca-Cola Store</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* About page specific styles */
+        .about-banner {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+        
+        .about-banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .about-banner p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .about-section {
+            padding: 4rem 5%;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-image img {
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .about-text h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: #e61a27;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .values-section {
+            background-color: #f9f9f9;
+            padding: 4rem 5%;
+            text-align: center;
+        }
+        
+        .values-section h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .values-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #e61a27;
+        }
+        
+        .values-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        .value-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            width: 280px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .value-icon {
+            font-size: 3rem;
+            color: #e61a27;
+            margin-bottom: 1.5rem;
+        }
+        
+        .value-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .value-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images\icon.png" alt="Coca-Cola Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="about.html" class="active">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="cart-container">
+            <a href="cart.html" class="order-btn">ORDER NOW</a>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-banner">
+            <h1>About Coca-Cola</h1>
+            <p>Discover the story behind the world's most iconic beverage brand and our commitment to refreshing the world.</p>
+        </section>
+
+        <section class="about-section">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images\history.png" alt="Coca-Cola History" width="200" height="20">
+                </div>
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Coca-Cola was invented in 1886 by pharmacist John Stith Pemberton in Atlanta, Georgia. The name "Coca-Cola" was suggested by Pemberton's bookkeeper, Frank Mason Robinson, who also designed the now-famous logo in flowing script.</p>
+                    <p>From its humble beginnings, Coca-Cola has grown to become one of the most recognized brands in the world, serving customers in more than 200 countries with a portfolio of more than 200 brands.</p>
+                    <p>Today, Coca-Cola continues to refresh the world and make a difference, bringing people together through its iconic beverages.</p>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to refresh the world in mind, body, and spirit. To inspire moments of optimism and happiness through our brands and actions. To create value and make a difference.</p>
+                    <p>We strive to be a total beverage company, offering a diverse portfolio of quality beverages that anticipate and satisfy people's desires and needs.</p>
+                    <p>We are committed to sustainable business practices and giving back to the communities we serve, ensuring a better shared future for our planet.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images\mission.png" alt="Coca-Cola Mission">
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <h2>Our Values</h2>
+            <div class="values-container">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Passion</h3>
+                    <p>We are committed to our brands and the refreshment they provide. We have the courage to pursue our dreams and the conviction to realize them.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p>We are dedicated to creating a more sustainable business and better shared future that makes a difference in people's lives, communities, and our planet.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>We believe in the power of coming together. We foster an inclusive environment where everyone's contributions are valued and respected.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We seek new ideas and better ways of doing things. We embrace change and continuously strive to improve our products and services.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart-popup-content">
+            <div class="cart-popup-header">
+                <h3>Your Cart</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-price">Rs 0.00</span></p>
+            </div>
+            <div class="cart-buttons">
+                <button id="clear-cart">Clear Cart</button>
+                <a href="checkout.html" class="checkout-btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images\icon.png" alt="Coca-Cola Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@cokestore.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Coca-Cola Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js\script.js"></script>
+</body>
+</html>
